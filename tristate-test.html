@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<script type="text/javascript" src="js/tristate-0.9.2.js" ></script>
+	</head>
+	<body>
+		<h3>Tri-State Checkbox Demo</h3>
+		<br />
+		<form onsubmit="return false; " >
+			
+			<span id="tristateBox" style="cursor: default;">&nbsp; Select/Unselect All</span>
+			<input type="hidden" id="tristateBoxInput" name="tristateBoxInput" value="0" />
+			<br />
+			
+			<div id="tristateBoxContainer" >
+				<label id="label_1" for="cb_1" >
+					<input type="checkbox" id="cb_1" name="cb_1" value="1" />
+					Java
+				</label>
+				<br />
+				<label id="label_2" for="cb_2" >
+					<input type="checkbox" id="cb_2" name="cb_2" value="2" checked="checked" />
+					Html
+				</label>
+				<br />
+				<label id="label_3" for="cb_3" >
+					<input type="checkbox" id="cb_3" name="cb_3" value="3" checked="checked" />
+					Css
+				</label>
+				<br />
+				<label id="label_4" for="cb_4" >
+					<input type="checkbox" id="cb_4" name="cb_4" value="4" checked="checked" />
+					Javascript
+				</label>
+				<br />
+				<label id="label_5" for="cb_5" >
+					<input type="checkbox" id="cb_5" name="cb_5" value="5" />
+					Ruby
+				</label>
+				<br />
+				<label id="label_6" for="cb_6" >
+					<input type="checkbox" id="cb_6" name="cb_6" value="6" />
+					Python
+				</label>
+				<br />
+			</div>
+			<br />
+			<span id="tristateBox2" style="cursor: default;">&nbsp; I liked this
+				<input type="hidden" id="tristateBox2State" name="tristateBox2State" value="1"/> 
+			</span>
+			<br />(Maybe/Yes/No)
+			<br />
+		</form>
+		<script type="text/javascript">
+			initTriStateCheckBox('tristateBox', 'tristateBoxContainer', false);
+			initTriStateCheckBox('tristateBox2', 'tristateBox2State', true);
+		</script>
+	</body>
+</html>
