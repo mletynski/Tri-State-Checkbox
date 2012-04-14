@@ -17,12 +17,12 @@ var CHECKED_NORM = 'CHECKED_NORM';
 var CHECKED_HILI = 'CHECKED_HILI';
 
 var DEFAULT_CONFIG = {
-	UNCHECKED_NORM : 'http://lh6.ggpht.com/_c_AszxFWLLs/SUrdffHaeiI/AAAAAAAACkw/uXPxlSq7ZME/s144/unchecked.gif',
-	UNCHECKED_HILI : 'http://lh4.ggpht.com/_c_AszxFWLLs/SUrdfZ1ojEI/AAAAAAAACk4/5YVi4rip30A/s144/unchecked_highlighted.gif',
-	INTERMEDIATE_NORM : 'http://lh5.ggpht.com/_c_AszxFWLLs/SUrdbwoLc0I/AAAAAAAACkg/SvmbPidI2-o/s144/intermediate.gif',
-	INTERMEDIATE_HILI : 'http://lh5.ggpht.com/_c_AszxFWLLs/SUrdbwtXDOI/AAAAAAAACko/82v692p5tno/s144/intermediate_highlighted.gif',
-	CHECKED_NORM : 'http://lh3.ggpht.com/_c_AszxFWLLs/SUrdbiLuQCI/AAAAAAAACkQ/faUYorb0WT8/s144/checked.gif',
-	CHECKED_HILI : 'http://lh4.ggpht.com/_c_AszxFWLLs/SUrdb6se_WI/AAAAAAAACkY/Khw5XhX0T5Y/s144/checked_highlighted.gif'
+	UNCHECKED_NORM : 'images/unchecked.gif',
+	UNCHECKED_HILI : 'images/unchecked_highlighted.gif',
+	INTERMEDIATE_NORM : 'images/intermediate.gif',
+	INTERMEDIATE_HILI : 'images/intermediate_highlighted.gif',
+	CHECKED_NORM : 'images/hecked.gif',
+	CHECKED_HILI : 'images/checked_highlighted.gif'
 };
 
 function getNextStateFromValue(theValue) {
