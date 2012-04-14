@@ -1,8 +1,11 @@
 /* 
  --- Tristate Checkbox ---
-v 0.9.2 19th Dec 2008
+v 0.9.3 14th Apr 2012
 By Shams Mahmood
 http://shamsmi.blogspot.com 
+
+Fixes by Michal Letynski mletynski@gmail.com
+
 */
 
 var STATE_NONE = 0;
@@ -21,7 +24,7 @@ var DEFAULT_CONFIG = {
 	UNCHECKED_HILI : 'images/unchecked_highlighted.gif',
 	INTERMEDIATE_NORM : 'images/intermediate.gif',
 	INTERMEDIATE_HILI : 'images/intermediate_highlighted.gif',
-	CHECKED_NORM : 'images/hecked.gif',
+	CHECKED_NORM : 'images/checked.gif',
 	CHECKED_HILI : 'images/checked_highlighted.gif'
 };
 
@@ -164,7 +167,6 @@ function createHiddenStateField(triStateBoxNode, triStateBoxFieldId) {
 function createTriStateImageNode(triStateBoxNode, imageNodeId, standAloneMode) {
 	var imageNode = new Image();
 	imageNode.id = imageNodeId;
-	//imageNode.src = DEFAULT_CONFIG[UNCHECKED_NORM];
 	triStateBoxNode.appendChild(imageNode);
 	if (triStateBoxNode.addEventListener) {
         triStateBoxNode.addEventListener('mouseover', onMouseOverImage(imageNode.id), false);
